@@ -17,7 +17,7 @@ const triangles = [1, 2, 3, 4, 5, 7, 8, 10, 11, 12, 13, 14]
 const crosses = [1, 2, 3, 5, 7, 10, 11, 13, 14]
 const squares = [1, 2, 3, 5, 7, 10, 11, 13, 14]
 const stars = [1, 2, 3, 4, 5, 7, 8]
-const whots = [20, 20, 20, 20, 20]
+
 
 /**
  * @param {Object} props
@@ -37,7 +37,7 @@ function Deck(props = {}) {
                 .concat(crosses.map(value => (GetCross({ value }))))
                 .concat(squares.map(value => (GetSquare({ value }))))
                 .concat(stars.map(value => (GetStar({ value }))))
-                .concat(whots.map(value => (GetWhot({ value }))))
+               
 
     props.emitter.emit('deck:create', this.cards)
 
