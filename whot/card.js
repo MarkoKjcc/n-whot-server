@@ -45,5 +45,5 @@ module.exports.GetTriangle = (props = {}) => (new Card(Object.assign(Object.assi
 module.exports.GetCircle = (props = {}) => (new Card(Object.assign(Object.assign({}, props), { shape: Shapes.Circle })))
 module.exports.GetSquare = (props = {}) => (new Card(Object.assign(Object.assign({}, props), { shape: Shapes.Square })))
 module.exports.GetStar = (props = {}) => (new Card(Object.assign(Object.assign({}, props), { shape: Shapes.Star })))
-module.exports.GetWhot = (props = {}) => (new Card(Object.assign(Object.assign({}, props), { shape: Shapes.Whot, value: 20 })))
+
 module.exports.GetCross = (props = {}) => (new Card(Object.assign(Object.assign({}, props), { shape: Shapes.Cross })))
